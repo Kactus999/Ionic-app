@@ -1,0 +1,20 @@
+.container {
+  position: absolute;
+  width: 85%;
+  height: 75%;
+  background-color: red;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  --cointainer-width: 85%;
+}
+
+.avatar {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 10%;
+  left: calc(var(--cointainer-width) / 2);
+  z-index: 10;
+}

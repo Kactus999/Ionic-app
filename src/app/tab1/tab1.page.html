@@ -1,17 +1,147 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <app-explore-container name="Tab 1 page"></app-explore-container> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col> <h1>Chubb</h1> </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="text-align: center">
+        <img
+          class="banner"
+          src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703376000&semt=sph"
+        />
+      </ion-col>
+    </ion-row>
+    <ion-row class="first-col">
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(130, 37, 130)">
+          <ion-icon
+            aria-hidden="true"
+            name="notifications-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Quản lý thông báo mới</p>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(80, 186, 251)">
+          <ion-icon
+            aria-hidden="true"
+            name="gift-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Chubb Rewards</p>
+        </div>
+      </ion-col>
+
+      <ion-col style="padding: 10px"> </ion-col>
+    </ion-row>
+
+    <ion-row style="padding-top: 10px">
+      <p>SẮP RA MẮT</p>
+    </ion-row>
+
+    <ion-row class="second-col">
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(250, 66, 66)">
+          <ion-icon
+            aria-hidden="true"
+            name="person-circle-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Thay đổi thông tin</p>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: blue">
+          <ion-icon
+            aria-hidden="true"
+            name="folder-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Tài liệu</p>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(245, 65, 29)">
+          <ion-icon
+            aria-hidden="true"
+            name="share-social-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Chia sẻ</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="second-col">
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(77, 251, 46)">
+          <ion-icon
+            aria-hidden="true"
+            name="checkbox-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Ký duyệt hồ sơ</p>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(249, 49, 196)">
+          <ion-icon
+            aria-hidden="true"
+            name="briefcase-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Báo cáo</p>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(130, 37, 130)">
+          <ion-icon
+            aria-hidden="true"
+            name="stats-chart-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">BBQ & eApp</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="second-col">
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(80, 186, 251)">
+          <ion-icon
+            aria-hidden="true"
+            name="checkbox-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Học trực tuyến</p>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(245, 65, 29)">
+          <ion-icon
+            aria-hidden="true"
+            name="briefcase-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">eFNA</p>
+        </div>
+      </ion-col>
+      <ion-col style="padding: 10px">
+        <div class="col-content" style="background-color: rgb(113, 98, 113)">
+          <ion-icon
+            aria-hidden="true"
+            name="stats-chart-outline"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">Quản lý khách hàng</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
