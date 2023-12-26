@@ -1,20 +1,151 @@
-.container {
-  position: absolute;
-  width: 85%;
-  height: 75%;
-  background-color: red;
-  top: 53%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// .container {
+//   position: absolute;
+//   width: 85%;
+//   height: 75%;
+//   background-color: red;
+//   top: 53%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
 
-  --cointainer-width: 85%;
+//   --cointainer-width: 85%;
+// }
+
+// .avatar {
+//   position: absolute;
+//   width: 90px;
+//   height: 90px;
+//   top: 10%;
+//   left: 10%;
+//   z-index: 10;
+// }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.avatar {
-  position: absolute;
+body {
+  background-color: #e1e7ed;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ion-text-color);
+}
+
+// p {
+//   font-size: 14px;
+//   color: #868d9b;
+// }
+
+.card {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: var(--ion-background-color);
+  margin-top: 80px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 99;
+  top: 5vh;
+}
+
+.card_profile {
+  position: relative;
+  height: 50px;
+}
+
+.card_profile_img {
   width: 90px;
   height: 90px;
-  top: 10%;
-  left: calc(var(--cointainer-width) / 2);
-  z-index: 10;
+  background-color: #868d9b;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgA66hksnbCo0_oSKoh3-2dpE5qU7HdS-oCzUomFN4IypJ3AiZ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ffffff;
+  margin: 0 auto;
+  margin-top: -60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+}
+
+.card_background_img {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  background-color: #e1e7ed;
+  background: url("../../../src/assets/images/app_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.last_login_time p {
+  font-size: 12px;
+  color: #868d9b;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.user_details {
+  text-align: center;
+}
+
+.user_details p {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #868d9b;
+}
+
+.user_details h2 {
+  margin-top: 10px;
+}
+
+.card_count {
+  padding: 30px;
+  border-top: 1px solid #dde1e7;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.count p {
+  margin-top: -10px;
+}
+
+ion-col {
+  padding-bottom: 20px;
+}
+
+ion-col p {
+  font-size: 20px;
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: var(--ion-text-color);
+}
+
+ion-icon {
+  color: var(--ion-color-primary);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom p {
+  text-align: center;
+  color: #868d9b;
 }
