@@ -1,1 +1,10 @@
-
+ion-tab-bar {
+  height: 7%;
+  ion-icon {
+    padding: 10px;
+  }
+}
+.tab-selected {
+  background: blue;
+  color: white;
+}

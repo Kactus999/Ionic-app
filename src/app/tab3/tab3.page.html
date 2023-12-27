@@ -1,17 +1,71 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="card_background_img"></div>
+  <div class="card">
+    <div class="card_profile">
+      <div class="card_profile_img"></div>
+    </div>
+    <div class="user_details">
+      <h2>Gordon Ramsay</h2>
+      <p>MS:000001</p>
+    </div>
+    <div class="last_login_time">
+      <p>Đăng nhập:</p>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col style="text-align: center">
+          <ion-icon
+            aria-hidden="true"
+            name="log-in-outline"
+            size="large"
+          ></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <p>Thay đổi cách đăng nhập</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center">
+          <ion-icon
+            aria-hidden="true"
+            name="notifications-outline"
+            size="large"
+          ></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <p>Quản lý thông báo</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center">
+          <ion-icon
+            aria-hidden="true"
+            name="help-circle-outline"
+            size="large"
+            style="color: var(--faded-primary)"
+          ></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <p style="color: var(--faded-color)">Những câu hỏi thường gặp</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center">
+          <ion-icon
+            aria-hidden="true"
+            name="log-out-outline"
+            size="large"
+            style="color: var(--ion-color-danger)"
+          ></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <p style="color: var(--ion-color-danger)">Đăng xuất</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <div class="bottom">
+      <p>Version: 1.0.0</p>
+    </div>
+  </div>
 </ion-content>
