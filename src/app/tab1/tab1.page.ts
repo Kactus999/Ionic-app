@@ -61,32 +61,21 @@ export class Tab1Page {
     {
       id: 8,
       color: 'rgb(80,186,251)',
-      iconName: 'checkbox-outline',
+      iconName: 'clipboard-outline',
       title: 'Học trực tuyến',
     },
     {
       id: 9,
       color: 'rgb(245,65,29)',
-      iconName: 'briefcase-outline',
+      iconName: 'bar-chart-outline',
       title: 'eFNA',
     },
     {
       id: 10,
       color: 'rgb(113,98,113)',
-      iconName: 'stats-chart-outline',
+      iconName: 'people-outline',
       title: 'Quản lý khách hàng',
     },
   ];
-  chunkedItems: any[] = [];
-  constructor() {
-    this.chunkedItems = this.chunkArray(this.upComingItemList, 3);
-  }
-
-  chunkArray(arr: any[], size: number): any[] {
-    const chunkedArr = [];
-    for (let i = 0; i < arr.length; i += size) {
-      chunkedArr.push(arr.slice(i, i + size));
-    }
-    return chunkedArr;
-  }
+  constructor() {}
 }

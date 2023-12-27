@@ -14,7 +14,24 @@
     </ion-row>
 
     <ion-row class="first-col">
-      <ion-col *ngFor="let item of itemList">
+      <ion-col size="4" *ngFor="let item of itemList">
+        <div class="col-content" [ngStyle]="{backgroundColor : item.color}">
+          <ion-icon
+            aria-hidden="true"
+            name="{{item.iconName}}"
+            style="font-size: 2.5rem; padding-top: 15px"
+          ></ion-icon>
+          <p style="margin: 1px !important">{{item.title}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="padding-top: 10px">
+      <p>SẮP RA MẮT</p>
+    </ion-row>
+
+    <ion-row class="second-col">
+      <ion-col size="4" *ngFor="let item of upComingItemList">
         <div class="col-content" [ngStyle]="{backgroundColor : item.color}">
           <ion-icon
             aria-hidden="true"
@@ -25,23 +42,6 @@
         </div>
       </ion-col>
       <ion-col style="padding: 10px"> </ion-col>
-    </ion-row>
-
-    <ion-row style="padding-top: 10px">
-      <p>SẮP RA MẮT</p>
-    </ion-row>
-
-    <ion-row class="second-col" *ngFor="let chunk of chunkedItems">
-      <ion-col *ngFor="let item of chunk" style="padding: 10px">
-        <div class="col-content" [ngStyle]="{ backgroundColor: item.color }">
-          <ion-icon
-            aria-hidden="true"
-            [name]="item.iconName"
-            style="font-size: 2.5rem; padding-top: 15px"
-          ></ion-icon>
-          <p style="margin: 1px !important">{{ item.title }}</p>
-        </div>
-      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
