@@ -19,6 +19,7 @@
           fill="solid"
           label="Tìm kiếm"
           labelPlacement="floating"
+          (keyup)="filterResults($event)"
         ></ion-input>
       </ion-col>
       <ion-col>
@@ -34,7 +35,7 @@
     </ion-row>
 
     <ion-row
-      *ngFor="let notification of notificationList"
+      *ngFor="let notification of filteredNotificationList"
       style="padding-top: 10px"
     >
       <div class="container">

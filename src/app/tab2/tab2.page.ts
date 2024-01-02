@@ -56,5 +56,29 @@ export class Tab2Page {
       time: '17/05/2020 13:33',
     },
   ];
-  constructor() {}
+
+  filteredNotificationList: Notification[] = [];
+
+  constructor() {
+    this.filteredNotificationList = this.notificationList;
+  }
+
+  filterResults(event: Event) {
+    const text = (event.target as HTMLInputElement).value.toLowerCase();
+    if (!text) {
+      this.filteredNotificationList = this.notificationList;
+      return;
+    }
+    this.filteredNotificationList = this.notificationList.filter(
+      (notification: any) => {
+        if (
+          notification &&
+          notification.title &&
+          typeof notification.title === 'string'
+        ) {
+          return notification.title.toLowerCase().includes(text);
+        }
+      }
+    );
+  }
 }
