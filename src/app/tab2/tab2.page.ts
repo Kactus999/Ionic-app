@@ -6,6 +6,7 @@ import { Notification } from './notification';
   styleUrls: ['tab2.page.scss'],
 })
 export class Tab2Page {
+  title: string = '';
   notificationList: Notification[] = [
     {
       id: 0,
@@ -63,8 +64,8 @@ export class Tab2Page {
     this.filteredNotificationList = this.notificationList;
   }
 
-  filterResults(event: Event) {
-    const text = (event.target as HTMLInputElement).value.toLowerCase();
+  filterResults() {
+    const text = this.title.toLowerCase();
     if (!text) {
       this.filteredNotificationList = this.notificationList;
       return;

@@ -19,7 +19,8 @@
           fill="solid"
           label="Tìm kiếm"
           labelPlacement="floating"
-          (keyup)="filterResults($event)"
+          (keyup)="filterResults()"
+          [(ngModel)]="title"
         ></ion-input>
       </ion-col>
       <ion-col>
