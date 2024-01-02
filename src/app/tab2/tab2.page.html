@@ -1,17 +1,61 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title> Thông báo </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-icon
+          aria-hidden="true"
+          name="search-outline"
+          style="font-size: 1rem; padding-top: 15px"
+        ></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-input
+          fill="solid"
+          label="Tìm kiếm"
+          labelPlacement="floating"
+        ></ion-input>
+      </ion-col>
+      <ion-col>
+        <i
+          class="fas fa-search-plus"
+          style="
+            font-size: 1rem;
+            padding-top: 15px;
+            color: var(--ion-color-primary);
+          "
+        ></i>
+      </ion-col>
+    </ion-row>
+
+    <ion-row
+      *ngFor="let notification of notificationList"
+      style="padding-top: 10px"
+    >
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-2">
+            <ion-icon
+              aria-hidden="true"
+              name="{{notification.icon}}"
+              style="font-size: 2.2rem; color: var(--ion-color-primary)"
+            ></ion-icon>
+          </div>
+          <div class="col">
+            <div class="notification-title">
+              <p>{{notification.title}}</p>
+            </div>
+            <div class="notification-time">
+              <p>{{notification.time}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-row>
+  </ion-grid>
 </ion-content>
