@@ -1,0 +1,22 @@
+ion-title {
+  &.md {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 0;
+    text-align: center;
+  }
+}
+
+.notification-title {
+  p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.notification-time {
+  p {
+    color: #868d9b;
+  }
+}
